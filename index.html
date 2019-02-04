@@ -14,11 +14,12 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/reveal.css">
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/theme/columbia-syntax.css">
 
-    <link rel="stylesheet" href="css/theme/moon-moacir.css" id="theme">
+    <link rel="stylesheet" href="css/theme/columbia.css" id="theme">
 
 
     <!-- Printing and PDF exports -->
@@ -46,8 +47,8 @@
           <h3>Let’s Make a Map in Leaflet!</h3>
           <p>
             <small><a href="http://moacir.com">Moacir P. de Sá Pereira</a> / <a href="http://twitter.com/muziejus">@muziejus</a><br />
-              Asst. Prof. / Faculty Fellow, <a href="http://english.fas.nyu.edu/page/home">Department of English</a>, New York University<br />
-              <a href="https://twitter.com/hashtag/nycdhweek18?src=hash">#nycdhweek18</a> New York, NY, 9 February 2018</small>
+              Research Data Librarian, <a href="http://library.columbia.edu">Columbia University Libraries</a><br />
+              <a href="https://twitter.com/hashtag/nycdhweek19?src=hash">#nycdhweek19</a> New York, NY, 5 February 2019</small>
           </p>
           <aside class="notes">
             Welcome everyone, and thanks for coming. My name’s Moacir de Sá Pereira, and
@@ -935,22 +936,24 @@ map.fitBounds([[23, -125], [50, -65]]) ;</code></pre>
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        markdown: {
+          gfm: true
+        },
         controls: false,
         progress: true,
         history: true,
         center: true,
-
         transition: 'slide', // none/fade/slide/convex/concave/zoom
-
         // Optional reveal.js plugins
         dependencies: [
-          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-          { src: 'plugin/zoom-js/zoom.js', async: true },
-          { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize("“Simple JavaScript Mapping,” #nycdhweek18 2018.2.9 ——— Moacir P. de Sá Pereira (@muziejus / moacir.com)"); } }
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/plugin/zoom-js/zoom.js', async: true },
+          { src: './moacir-files/notes/notes.js', async: true },
+          // { src: 'moacir-files/title-footer/title-footer.js', async: true, callback: function() { title_footer.initialize(footerString); } },
+          { src: './moacir-files/app.js', async: true }
         ]
       });
 
