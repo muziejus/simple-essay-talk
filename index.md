@@ -19,7 +19,7 @@ you have to click on links and copy paste things.
 
 ---
 
-## Software to get
+## Software to Get
 
 <div class="row">
 <div class="col-6">
@@ -46,7 +46,42 @@ Note: While these are all downloading, I’ll describe a bit...
 
 ---
 
-## While all that’s downloading, here’s Git
+## While All That’s Downloading, Three Processes:
+
+1. Constructing and formatting a CV
+1. Publishing the CV online
+1. Putting the CV under version control
+
+---
+
+## Constructing and Formatting a CV
+
+1. Edit metadata about CV (formatted in [YAML](https://rollout.io/blog/yaml-tutorial-everything-you-need-get-started/)
+1. Edit contents of CV sections (formatted in [Markdown](https://guides.github.com/features/mastering-markdown/))
+1. Process sections and metadata with a shell script
+1. Repeat
+
+---
+
+## Publishing the CV Online
+
+1. Getting the Simple-CV code (git clone)
+1. Making our changes and processing them (“constructing and formatting a CV”)
+1. Adding a milestone to our work (git commit)
+1. Putting the work online as a webpage (git push)
+1. Repeat (except getting the code)
+
+---
+
+## Putting the CV under Version Control
+
+1. Uh. It’s time for Git.
+1. Wait why Git?
+1. Not Git. Please not Git.
+
+---
+
+## Git
 
 * “free and open source distributed version control system designed to handle
 everything from small to very large projects with speed and efficiency.”
@@ -111,7 +146,17 @@ parts of your CV.
 
 ---
 
-## Next up, GitHub <i class="fab fa-github"></i>
+## Back to Publishing the CV Online
+
+1. Getting the Simple-CV code (git clone)
+1. Making our changes and processing them (“constructing and formatting a CV”)
+1. Adding a milestone to our work (git commit)
+1. Putting the work online as a webpage (git push)
+1. Repeat (except getting the code)
+
+---
+
+## Getting the Simple-CV Code: GitHub <i class="fab fa-github"></i>
 
 1. Create an account at [github.com](http://github.com)
 1. Fork the [`simple-cv`
@@ -123,12 +168,12 @@ GitHub?
 
 ---
 
-## Atom, the hackable plain text editor
+## Making changes: Atom, the Plain Text editor
 
-1. Install “platformio” plugin
-1. Enable autosave
-1. Clone repository from GitHub
+1. Install Atom plugins: [github.com/plain-plain-text/atom-configs/](http://github.com/plain-plain-text/atom-configs)
+1. Clone your own `simple-cv` fork repository from GitHub
 1. Link Atom to GitHub
+1. Start editing
 
 Note: Atom is brought to us by the people at GitHub. It probably won’t win you
 any cool kid awards amongst your hacker nerd friends, but it’s an easy editor
@@ -136,8 +181,37 @@ to learn, I think, and its Git integration is tip-top.
 
 ---
 
+## Key Files in Simple-CV
 
+* 📁 metadata (YAML metadata files)
+    * format.yml
+    * html-options.yml
+    * pdf-options.yml
+    * personal.yml
+* 📁 docs (the files that make up the webpage)
+* 📁 sections (Markdown files that make up the content)
+* 📁 templates (TeX and html templates to fill with CV content)
+* process.ps1 (Windows Powershell script to generate CVs)
+* process.sh (MacOS / Linux script to generate CVs)
+* sections.txt (List of files in sections folder to put CV in order)
 
+---
+
+## Adding a Milestone: Atom
+
+1. Edit metadata files
+1. Edit sections files, add new ones, edit sections.txt
+1. Process files via interactive shell
+1. Save, Stage, Commit
+
+---
+
+## Putting the Work Online as a Webpage
+
+1. Push
+1. There is no step 2.
+
+---
 
 ## Thanks!
 ### [@muziejus](http://twitter.com/muziejus) / moacir.p@columbia.edu
