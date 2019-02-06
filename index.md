@@ -174,7 +174,7 @@ GitHub?
 
 ## Making changes: Atom, the Plain Text editor
 
-1. Install Atom plugins: [github.com/plain-plain-text/atom-configs/](http://github.com/plain-plain-text/atom-configs)
+1. Install Atom plugins: [github.com/plain-plain-text/atom-config/](http://github.com/plain-plain-text/atom-config)
 1. Clone your own `simple-cv` fork repository from GitHub
 1. Link Atom to GitHub
 1. Start editing
