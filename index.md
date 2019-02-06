@@ -135,6 +135,10 @@ conceit of Git.
 
 ---
 
+## Hopefully downloading is done, so let’s install…
+
+---
+
 ## You’re not working on a _document_.<br />You’re working on a _project_.
 
 Note: For the rest of today, we’ll be working on a project that is your CV.
