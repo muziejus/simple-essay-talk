@@ -178,7 +178,7 @@ voice of Indiana Jones…
 
 Output:
 
-![screenshot of opening lines](https://i.imgur.com/devaMgg.jpg)
+![screenshot of opening lines](https://i.imgur.com/FBHq5q5.jpg)
 
 ---
 
@@ -193,7 +193,7 @@ I will attempt to say smart things about Djuna Barnes’s
 
 Output:
 
-![screenshot of opening lines](https://i.imgur.com/devaMgg.jpg)
+![screenshot of opening lines](https://i.imgur.com/FBHq5q5.jpg)
 
 ---
 
